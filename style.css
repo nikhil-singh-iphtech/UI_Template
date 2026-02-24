@@ -910,3 +910,99 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
 
 }
 
+/* ============================= */
+/*         HERO ANIMATIONS       */
+/* ============================= */
+
+/* Keyframes */
+
+@keyframes heroZoomFade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.u-section-1 h1 {
+  text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.4);
+
+  will-change: transform, opacity;
+  animation: heroZoomFade 2400ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
+
+
+.u-section-1 p:not(.u-credit) {
+  opacity: 0;
+
+  will-change: transform, opacity;
+  animation: heroFadeUp 2400ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.4s;
+}
+
+
+
+
+.u-buttons .u-btn {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+
+
+.u-buttons .u-btn:first-child {
+  animation: slideFromLeft 2400ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.8s;
+}
+
+
+
+
+.u-buttons .u-btn:last-child {
+  animation: slideFromRight 2400ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.8s;
+}
+
+
+
