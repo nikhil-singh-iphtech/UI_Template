@@ -74,18 +74,20 @@ body {
 .u-section-1 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 4.35rem;
+  font-size: 3.75rem;
   line-height: 1.2;
   letter-spacing: 1px;
 }
 
 .u-section-1 p {
   font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2;
   color: #ffffff;
-  margin-bottom: 40px;
-  line-height: 1.8;
-  font-weight:600 ;
-  margin-top: 20px;
+
+  max-width: 800px;   
+  margin: 20px auto 40px auto;
+  text-align: center;
 }
 
 .u-buttons {
@@ -94,14 +96,28 @@ body {
   gap: 30px;
 }
 
-.u-btn {
+
+
+
+ .u-btn {
+  width: 250px;
+  height: 60px; 
+  padding: 22px 28px;  
+
   background: #f39c12;
-  padding: 16px 50px;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 600;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
   letter-spacing: 1px;
-  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1.2;  
 }
 
 .u-btn:hover {
@@ -328,35 +344,43 @@ body {
 
 
 
+
+
 .contact-section {
   background-image: linear-gradient(
-  0deg,
-  rgba(0, 0, 0, 0.55),
-  rgba(0, 0, 0, 0.1)
-),
-url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189d383b81/fgg-min.jpg");
-    background-position: 50% 50%;
-  padding: 100px 0 200px;
+    0deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.1)
+  ),
+  url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189d383b81/fgg-min.jpg");
+
+  background-position: 50% 50%;
+  background-size: cover;
+ 
+  padding: 100px 0 10px;
   position: relative;
 }
 
-.contact-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-}
+
+
+
 
 .contact-container {
   position: relative;
   text-align: center;
   color: white;
-  max-width: 1100px;
+  max-width: 1140px;   
   margin: auto;
 }
 
+
+
+
 .contact-container h2 {
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: 700;                     
   font-size: 60px;
+  line-height: 1.2;                      
   color: #f39c34;
   margin-bottom: 15px;
 }
@@ -379,11 +403,13 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
   margin-top: 50px;
 }
 
+
+
 .card-inner {
   background: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 70px 40px;
+  padding: 80px 60px;   
   color: #222;
 }
 
@@ -428,7 +454,7 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
 
 .dark-footer {
   background-color: #3b3b3b;  
-  padding: 120px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -438,20 +464,22 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
 }
 
 .footer-text {
-  color: #e5e5e5;
-  font-size: 18px;
+  color: #ffffff;
+  font-size: .875rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-bottom: 80px;
 }
 
 .footer-credit {
-  color: #cfcfcf;
-  font-size: 16px;
+  color: #ffffff;
+  font-size: .9rem;
+  line-height: 1.6;
+
 }
 
 .footer-credit a {
-  color: #ffffff;
+  color: #ebebfd;;
   text-decoration: underline;
   transition: 0.3s ease;
 }
@@ -534,13 +562,20 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
   }
 
   .u-section-1 h1 {
-    font-size: 3rem;   
-    line-height: 1.2;
-  }
+  font-size: 3.75rem;   
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .u-section-1 p {
-    font-size: 1.2rem;
-  }
+ .u-section-1 p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
   .u-buttons {
     gap: 20px;
@@ -548,9 +583,29 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
   }
 
   .u-btn {
-    padding: 14px 35px;
+    padding: 22px 35px;
   }
 
+}
+
+@media (max-width: 767px) {
+  .u-section-1 p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 h1 {
+    font-size: 3.75rem;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -658,7 +713,7 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
 }
 
 .u-btn {
-  padding: 14px 28px;
+  padding: 22px 28px;
   text-decoration: none;
   display: inline-block;
 }
@@ -677,18 +732,21 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
     width: 100%;
   }
 
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-top: 100px;
-  }
+ .u-section-1 h1 {
+  font-size: 3rem;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   .u-section-1 p {
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 340px;
-    margin: 20px auto;
-  }
+  font-size: 1.5rem;
+  font-weight: 700;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
   
   .u-buttons {
@@ -810,7 +868,7 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
  
     .card-inner {
     width: 540px;
-    height: 878px;
+    /* height: 878px; */
     max-width: 100%;
     margin: 0 auto;
     grid-template-columns: 1fr;
@@ -910,11 +968,7 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
 
 }
 
-/* ============================= */
-/*         HERO ANIMATIONS       */
-/* ============================= */
 
-/* Keyframes */
 
 @keyframes heroZoomFade {
   0% {
@@ -1005,4 +1059,43 @@ url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189
 }
 
 
+
+
+.u-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+}
+
+
+
+@media (max-width: 991px) {
+  .u-section-1 p {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    max-width: 820px !important;
+    margin: 20px auto !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 p {
+    max-width: 600px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 p {
+    max-width: 340px !important;
+  }
+}
+
+
+.u-section-1 .u-credit{
+  font-size: 1rem;
+  font-family: 400;
+  line-height: 2;
+}
 
