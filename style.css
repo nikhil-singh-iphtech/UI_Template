@@ -5,7 +5,7 @@
 }
 
 body {
- font-family: Montserrat, sans-serif;
+ font-family:'Open Sans', sans-serif;
 }
 
 
@@ -74,19 +74,19 @@ body {
 .u-section-1 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 3.75rem;
+  font-size: 72px;
   line-height: 1.2;
-  letter-spacing: 1px;
+  
 }
 
 .u-section-1 p {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.7;
   color: #ffffff;
 
   max-width: 800px;   
-  margin: 20px auto 40px auto;
+  margin: 30px 90px 0px;
   text-align: center;
 }
 
@@ -104,7 +104,7 @@ body {
   height: 60px; 
   padding: 22px 28px;  
 
-  background: #f39c12;
+  background: #f19A0E;
   color: #ffffff;
   text-decoration: none;
 
@@ -155,8 +155,8 @@ body {
 }
 
 .team-header h2 {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 600;
 }
 
 
@@ -193,25 +193,25 @@ body {
   left: 50%;
   bottom: -70px;              
   transform: translateX(-50%);
-  width: 85%;
+  width: 77%;
   background: #ffffff;        
   padding: 30px 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); */
   z-index: 2;
 }
 
 
 .card-content h3 {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   color: #f39c12;           
   margin-bottom: 8px;
 }
 
 
 .card-content p {
-  font-size: 16px;
+  font-size: 18px;
   color: #444;
   margin-bottom: 20px;
 }
@@ -263,7 +263,7 @@ body {
 
 .content-wrapper {
   max-width: 1140px;
-  margin: -150px auto 0;   
+  margin: -110px auto 0;   
   padding: 0 20px;
   position: relative;     
   z-index: 2;
@@ -350,7 +350,7 @@ body {
   background-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.1)
+    rgba(0, 0, 0, 0.55)
   ),
   url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3dad7c44db8653189d383b81/fgg-min.jpg");
 
@@ -378,8 +378,8 @@ body {
 
 .contact-container h2 {
   font-family: 'Montserrat', sans-serif;  
-  font-weight: 700;                     
-  font-size: 60px;
+  font-weight: 600;                     
+  font-size: 55px;
   line-height: 1.2;                      
   color: #f39c34;
   margin-bottom: 15px;
@@ -409,7 +409,7 @@ body {
   background: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 80px 60px;   
+  padding: 30px 70px;   
   color: #222;
 }
 
@@ -435,7 +435,8 @@ body {
 
 .card-box p {
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 2;
+  font-weight: 400;
 }
 
 .contact-container .u-credit {
@@ -1099,3 +1100,291 @@ body {
   line-height: 2;
 }
 
+
+
+
+.about-section {
+  background: #e79a3b;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+
+.about-section img {
+  width: 100%;
+  height: 704px;             
+  object-fit: cover;          
+  display: block;
+}
+
+
+.content-wrapper {
+  /* max-width: 844px; */
+  margin: -109px auto 60;      
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.content-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: #ffffff;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+
+.left-part {
+  padding: 70px 70px 70px 70px;   
+}
+
+.left-part h2 {
+  font-size: 42px;             
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.line {
+  width: 420px;                 
+  height: 6px;
+  background: #e79a3b;
+  margin-bottom: 30px;
+}
+
+.left-part h4 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.left-part p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 22px;
+  max-width: 600px;             
+}
+
+.left-part .credit {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.left-part button {
+  background: #e79a3b;
+  border: none;
+  padding: 14px 34px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+
+.right-part {
+  background: #000;
+  color: #fff;
+  padding: 70px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-block {
+  margin-bottom: 32px;
+}
+
+.info-block span {
+  /* font-size: 12px; */
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.info-block p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+@media (max-width: 991px) {
+
+  .about-section img {
+    height: 420px;
+  }
+
+  .content-wrapper {
+    max-width: 720px;
+    margin: -140px auto 0;
+  }
+
+  .content-box {
+    grid-template-columns: 1fr;
+  }
+
+  .left-part {
+    padding: 50px 40px;
+  }
+
+  .left-part h2 {
+    font-size: 34px;
+  }
+
+  .line {
+    width: 320px;
+  }
+
+  .left-part h4 {
+    font-size: 18px;
+  }
+
+  .left-part p {
+    font-size: 15px;
+  }
+
+  .right-part {
+    padding: 45px 40px;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+
+  .about-section img {
+    height: 300px;
+  }
+
+  .content-wrapper {
+    margin: -100px auto 0;
+  }
+
+  .left-part {
+    padding: 35px 25px;
+  }
+
+  .left-part h2 {
+    font-size: 28px;
+  }
+
+  .line {
+    width: 200px;
+    height: 5px;
+  }
+
+  .left-part h4 {
+    font-size: 16px;
+  }
+
+  .left-part p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .right-part {
+    padding: 35px 25px;
+  }
+
+}
+
+
+.left-part h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.2;
+  font-weight: 600;
+
+}
+.left-part h4 { 
+     font-size: 20px;
+     font-family: Montserrat, sans-serif;
+     margin: 40px 0px 30px;
+     line-height: 1.4;
+     font-weight: 700;
+}
+
+.left-part p{
+  font-size: 20px;
+  line-height: 2.2;
+  margin: 20px 0px 0px;
+  font-weight: 400;
+  
+}
+
+.about-section .credit {
+    color: #111;
+    font-size: 20px;
+    margin: 20px 0px 0px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.content-wrapper{
+  width: 1000px;
+}
+
+
+
+.email{
+  font-family: Montserrat, sans-serif !important;
+  font-weight: 300 !important;
+  line-height: 1.2 !important;
+  font-size: 18px !important;
+
+}
+
+.adrian{
+  font-size: 16px !important;
+  
+}
+
+.career{
+  font-family: Montserrat, sans-serif !important;
+
+}
+
+.apply{
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 2 !important;
+  font-size: 20px !important;
+}
+
+.phone{
+  font-family: Montserrat, sans-serif !important;
+  font-size: 18px !important;
+
+}
+
+.conatact{
+  font-size: 20px !important;
+  font-family: 'Open Sans', sans-serif !important;
+
+}
+
+.visiting{
+  font-size: 18px !important;
+  font-family: Montserrat, sans-serif !important;
+
+}
+
+.longPara{
+  font-size: 20px !important;
+  margin: 20px 0px 0px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 2 !important;
+}
+
+
+.u-svg-content{
+  
+ width: 40px;
+  height: 40px;
+  fill: #ffffff;
+}
