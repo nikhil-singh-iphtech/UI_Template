@@ -1388,3 +1388,7 @@ body {
   height: 40px;
   fill: #ffffff;
 }
+
+#menu-hamburger{
+  fill: black;
+}

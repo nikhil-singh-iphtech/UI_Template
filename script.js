@@ -18,14 +18,14 @@
 // console.log(result);
 // console.log(result.length);
 
-const arr = ["a", "b", "c", "d", "e", "f"];
+// const arr = ["a", "b", "c", "d", "e", "f"];
 
 
-arr.splice(3, 1);
-arr.splice(2, 1); 
-arr.splice(0, 1); 
+// arr.splice(3, 1);
+// arr.splice(2, 1); 
+// arr.splice(0, 1); 
 
-console.log(arr);
+// console.log(arr);
 
 
 // const arr=[]
@@ -48,5 +48,47 @@ console.log(arr);
 
 
 
+// let students = [
+//   { id: 1, name: "Rahul" },
+//   { id: 2, name: "Priya" },
+//   { id: 1, name: "Amit" },
+//   { id: 3, name: "Sneha" },
+//   { id: 2, name: "Rohit" }
+// ];
 
+
+// let uniqueStudents = [
+//   ...new Map(students.map(student => [student.id, student])).values()
+// ];
+
+// console.log(uniqueStudents);
+
+// let setA = new Set([1, 2, 3, 4, 5]);
+// let setB = new Set([3, 4, 5, 6, 7]);
+
+// let common = [...setA].filter(item => setB.has(item));
+
+// console.log(common); 
+
+
+let loans = [
+  { id: 101, status: "approved", amt: 15000 },
+  { id: 102, status: "pending", amt: 8000 },
+  { id: 103, status: "rejected", amt: 4000 },
+  { id: 104, status: "approved", amt: 22000 },
+  { id: 105, status: "pending", amt: 12000 }
+];
+
+let groupedByStatus = loans.reduce((acc, loan) => {
+  let key = loan.status;
+
+  if (!acc[key]) {
+    acc[key] = [];
+  }
+
+  acc[key].push(loan);
+  return acc;
+}, {});
+
+console.log(groupedByStatus);
 
