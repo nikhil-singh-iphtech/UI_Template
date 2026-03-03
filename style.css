@@ -514,6 +514,7 @@ body {
 .team-section .u-credit {
   color: #ffffff !important;
   text-decoration: none !important;
+  margin-bottom: 65px;
 }
 
 .team-section .u-credit a {
@@ -1109,7 +1110,7 @@ body {
 
 .about-section {
   background: #e79a3b;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   position: relative;
 }
 
@@ -1140,7 +1141,7 @@ body {
 
 
 .left-part {
-  padding: 70px 70px 70px 70px;   
+  padding: 45px 40px 55px 25px;   
 }
 
 .left-part h2 {
@@ -1191,7 +1192,7 @@ body {
 .right-part {
   background: #000;
   color: #fff;
-  padding: 70px 45px;
+  padding: 65px 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
