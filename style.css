@@ -167,9 +167,9 @@ body {
   margin: -200px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 60px;
   background: #ffffff;
-  padding: 48px;
+  padding: 30px;
 }
 
 
@@ -410,8 +410,9 @@ body {
   background: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 30px 70px;   
+  padding: 30px 20px;   
   color: #222;
+  padding-top: 58px;
 }
 
 .card-box {
@@ -1203,7 +1204,7 @@ body {
 }
 
 .info-block span {
-  /* font-size: 12px; */
+  font-size: 18px;
   letter-spacing: 2px;
   display: block;
   margin-bottom: 10px;
