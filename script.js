@@ -71,24 +71,51 @@
 // console.log(common); 
 
 
-let loans = [
-  { id: 101, status: "approved", amt: 15000 },
-  { id: 102, status: "pending", amt: 8000 },
-  { id: 103, status: "rejected", amt: 4000 },
-  { id: 104, status: "approved", amt: 22000 },
-  { id: 105, status: "pending", amt: 12000 }
-];
+// let loans = [
+//   { id: 101, status: "approved", amt: 15000 },
+//   { id: 102, status: "pending", amt: 8000 },
+//   { id: 103, status: "rejected", amt: 4000 },
+//   { id: 104, status: "approved", amt: 22000 },
+//   { id: 105, status: "pending", amt: 12000 }
+// ];
 
-let groupedByStatus = loans.reduce((acc, loan) => {
-  let key = loan.status;
+// let groupedByStatus = loans.reduce((acc, loan) => {
+//   let key = loan.status;
 
-  if (!acc[key]) {
-    acc[key] = [];
-  }
+//   if (!acc[key]) {
+//     acc[key] = [];
+//   }
 
-  acc[key].push(loan);
-  return acc;
-}, {});
+//   acc[key].push(loan);
+//   return acc;
+// }, {});
 
-console.log(groupedByStatus);
+// console.log(groupedByStatus);
+
+
+
+// const n=prompt("Enter the range")
+
+const arr=[]
+arr.push(2)
+arr.push(3)
+
+
+for(let i=4;i<=50;i++){
+  let prime =true;
+     for(let j=2;j*j<=i;j++){
+        if(i%j===0){
+          prime=false
+        }
+     }
+     if(prime){
+      arr.push(i)
+     }
+}
+
+console.log(arr)
+
+
+
+
 

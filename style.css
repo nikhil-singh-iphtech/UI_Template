@@ -76,6 +76,7 @@ body {
   font-weight: 600;
   font-size: 72px;
   line-height: 1.2;
+  padding-top: 50px;
   
 }
 
@@ -1096,8 +1097,11 @@ body {
 
 .u-section-1 .u-credit{
   font-size: 1rem;
-  font-family: 400;
+  font-weight: 400;
   line-height: 2;
+  margin-bottom: 40px;
+  padding-left: 85px;
+  padding-top: 20px;
 }
 
 
@@ -1401,4 +1405,27 @@ body {
 
 .hover-contact a:hover {
   color: #f19a0e;
+}
+
+
+
+
+
+
+@media (max-width: 575px) {
+  .u-header {
+   padding: 0 25px; 
+    height: 75px;     
+  }
+
+  .u-logo {
+    height: 30px;   
+    width: auto;
+    margin: 0;
+  }
+
+  .u-svg-content {
+    width: 28px;      
+    height: 28px;
+  }
 }
