@@ -96,26 +96,67 @@
 
 // const n=prompt("Enter the range")
 
-const arr=[]
-arr.push(2)
-arr.push(3)
+// const arr=[]
+// arr.push(2)
+// arr.push(3)
 
 
-for(let i=4;i<=50;i++){
-  let prime =true;
-     for(let j=2;j*j<=i;j++){
-        if(i%j===0){
-          prime=false
-        }
-     }
-     if(prime){
-      arr.push(i)
-     }
-}
+// for(let i=4;i<=50;i++){
+//   let prime =true;
+//      for(let j=2;j*j<=i;j++){
+//         if(i%j===0){
+//           prime=false
+//         }
+//      }
+//      if(prime){
+//       arr.push(i)
+//      }
+// }
 
-console.log(arr)
-
-
+// console.log(arr)
 
 
+
+// function groupAnagrams(words) {
+//   let map = {};
+
+//   for (let word of words) {
+//     let key = word.toLowerCase().split("").sort().join("");
+
+//     if (!map[key]) {
+//       map[key] = [];
+//     }
+
+//     map[key].push(word);
+//   }
+
+//   return Object.values(map);
+// }
+
+// let words = [];
+
+// while (true) {
+//   let input = prompt("Enter a word (Press Cancel to stop)");
+
+//   // If user presses Cancel
+//   if (input === null) {
+//     alert("Input cancelled by user.");
+//     break;
+//   }
+
+//   words.push(input);
+// }
+
+// let result = groupAnagrams(words);
+
+// alert("Grouped Anagrams: " + JSON.stringify(result));
+
+
+
+// function test(a){
+//   // return a+10;
+//   return a*10;
+// }
+
+// console.log(test(true))
 
