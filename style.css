@@ -1156,7 +1156,7 @@ body {
 
 .content-box {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.85fr 1.15fr;
   background: #ffffff;
   box-shadow: 0 25px 50px rgba(0,0,0,0.12);
 }
